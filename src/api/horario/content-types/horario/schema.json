@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horarios",
+  "info": {
+    "singularName": "horario",
+    "pluralName": "horarios",
+    "displayName": "Horario",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "horaInicio": {
+      "type": "string"
+    },
+    "horaFin": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "programa": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programa.programa",
+      "inversedBy": "horariosRelacion"
+    },
+    "dias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dia.dia"
+    }
+  }
+}

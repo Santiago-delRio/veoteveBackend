@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "programas",
+  "collectionName": "transmisiones",
   "info": {
-    "singularName": "programa",
-    "pluralName": "programas",
-    "displayName": "Programa",
+    "singularName": "transmision",
+    "pluralName": "transmisiones",
+    "displayName": "Transmision",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nombre": {
+    "titulo": {
       "type": "string"
     },
     "portada": {
@@ -25,21 +25,20 @@
         "videos"
       ]
     },
-    "descripcion": {
-      "type": "text"
-    },
-    "horarios": {
-      "type": "string"
-    },
     "slug": {
       "type": "uid",
-      "targetField": "nombre"
+      "targetField": "titulo"
     },
-    "horariosRelacion": {
+    "fecha": {
+      "type": "date"
+    },
+    "link": {
+      "type": "string"
+    },
+    "programa": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::horario.horario",
-      "mappedBy": "programa"
+      "relation": "oneToOne",
+      "target": "api::programa.programa"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dias",
+  "info": {
+    "singularName": "dia",
+    "pluralName": "dias",
+    "displayName": "Dia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}
