@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "novedades_parroquias",
+  "info": {
+    "singularName": "novedades-parroquia",
+    "pluralName": "novedades-parroquias",
+    "displayName": "Novedades parroquia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "contenido": {
+      "type": "richtext"
+    },
+    "portada": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo"
+    }
+  }
+}
