@@ -1,12 +1,12 @@
 export default {
   config: {
     locales: [
-      // 'ar',
+      'ar',
       // 'fr',
       // 'cs',
       // 'de',
       // 'dk',
-      // 'es',
+      'es',
       // 'he',
       // 'id',
       // 'it',

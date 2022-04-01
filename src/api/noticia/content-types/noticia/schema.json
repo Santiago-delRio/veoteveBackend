@@ -40,6 +40,11 @@
     },
     "linkVideo": {
       "type": "string"
+    },
+    "contador": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
     }
   }
 }
